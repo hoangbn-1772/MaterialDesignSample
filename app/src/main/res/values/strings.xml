@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MaterialDesignSample</string>
+    <string name="action_voice_rec">voice_rec</string>
+    <string name="action_location">location\\</string>
+    <string name="action_taxi">taxi</string>
+    <string name="action_change_colors">Change Color</string>
+</resources>

@@ -1,0 +1,144 @@
+# MaterialDesignSample
+
+# Layout
+- Material Design layouts khuyến khích tính nhất quán giữa các nền tảng, môi trường và kích thước màn hình bằng cách sử dụng các yếu tố và khoảng cách đồng nhất.
+## Nguyên tắc
+- Predictable (dự đoán): UI nên sử dụng bố cục trực quan và có thể dự đoán được, với các vùng UI và tổ chức không gian nhất quán.
+- Consistent (thích hợp): Layout nên sử dụng grid, keyline, padding nhất quán.
+- Response (đáp ứng): Layout có khả năng đáp ứng với đầu vào từ user, device và screen.
+
+## Structure
+- Material Design layout được cân bằng trực quan. Hầu hết các phép đo đều phù hợp với grid 8dp, điều chỉnh cả khoảng cách và bố cục tổng thể.
+- Các thành phần nhỏ hơn như biểu tượng, kiểu chữ có thể căn chỉnh theo grid 4dp.
+
+## Mật độ và độ phân giải
+- Là số lượng pixel/1inch, tùy thuộc vào từng nền tảng
+- Màn hình mật độ cao có nhiều pixel/1inch hơn màn hơn màn hình mật độ thấp. Do đó, thành phần UI có cùng pixel sẽ xuất hiện lớn hơn trên màn hình mật độ thấp và nhỏ hơn ở màn hình mật độ cao.
+- Tính toán mật độ điểm ảnh (pixel): <b>Screen density = Screen width (or height) in pixels / Screen width (or height) đơn vị inche</b>
+
+- pixel độc lập với mật độ (dp): Đề cập đến việc hiển thị thống nhất các thành phần UI trên màn hình với mật độ khác nhau.
+	+ dp: Là đơn vị linh hoạt có tỷ lệ để có kích thước đồng đều trên bất kỳ màn hình nào.
+	+ Material UIs sử dụng dp để hiển thị các thành phần trên màn hình với mật độ khác nhau.
+- 1dp = 1pixel trên màn hình có mật độ 160. Để tính toán dp ta sử dụng công thức: *dp = (width in pixels * 160) / screen density*
+- Đơn vị sp: phục vụ như chức năng của dp nhưng áp dụng với phông chữ.
+
+## Responsive layout grid
+- Để thích ứng với kích thước và hướng màn hình, đảm bảo tính nhất quán giữa các bố cục.
+- Layout grid được tạo thành từ 3 thành phần: columns, gutters và margins
+	+ Columns: Nội dung được đặt trong các khu vực của màn hình có chứa các cột. Độ rộng của các cột được xác định bằng tỷ lệ phần trăm (thay vì giá trị cố định) để nội dung thích ứng linh hoạt với mọi kích thước màn hình. Số lượng columns phụ thuộc vào kích thước màn hình.
+	+ Gutters: Khoảng cách giữa các cột. Có giá trị cố định theo từng kích thước màn hình.
+	+ Margins: Là khoảng cách giữa nội dung và các cạnh trái và phải của màn hình. Có giá trị cố định theo từng kích thước màn hình.
+- Grid customization: Có thể được điều chỉnh để đáp ứng nhu cầu của cả sản phẩm và kích cỡ thiết bị khác nhau.
+- Breakpoints: Là phạm vi kích thước màn hình. Với mỗi phạm vi breakpoint, layout được điều chỉnh để phù hợp với kích thước và hướng màn hình.
+	+ Layout sử dụng lưới 4-column, 8-column, 12-column có sẵn để sử dụng trên các màn hình.
+	+ Margins và gutters là các giá trị động, không cần phải bằng nhau.
+
+- Grid behavior:
+	+ Fluid grids: Sử dụng columns chia tỉ lệ và thay đổi kích thước content. Có thể sử dụng breakpoint để xác định xem bố cục có cần thay đổi không.
+	+ Fixed grids: Sử dụng columns có kích thước cố định, với fuild margins để giữ content không thay đổi trong mỗi phạm vi breakpoint.
+
+- UI regions (Vùng UI): UI được tạo thành từ các thành phần như navigation, content areas, app bar,... Các thành phần này có thể hiển thị actions, content, navigation destinations. Vùng UI phải nhất quán trên các loại thiết bị, đáp ứng các breakpoint khác nhau. Tạo sự quen thuộc cho người dùng.
+	+ Permanent UI regions: Là các vùng UI có thể được hiển thị bên ngoài grid như navigation drawer. Những vùng này không bị mất đi.
+	+ Persistent UI regions: Là các vùng UI có thể được hiển thị theo yêu cầu bất cứ lúc nào, nó có thể bật, tắt, xuất hiện hoặc mất đi. Khi nó hiển thị chúng sẽ  dồn content và grid lại, không bị ảnh hưởng bởi các yếu tốt khác trên màn hình. Các thành phần khác vẫn có thể tương tác bình thường.
+	+ Temporary UI regions (Vùng UI tạm thời): Xuất hiện tạm thời, không làm ảnh hưởng tới response grid. Khi nó hiển thị, các thành phần khác của màn hình không thể tương tác.
+
+
+## Spacing method
+- Baseline:
+	+ 8dp: Tất cả các thành phần phù hợp với lưới baseline 8dp cả mobile, tablet, desktop
+	+ 4dp: icon, typography và một số thành phần có thể căn chỉnh theo grid 4dp.
+
+- Spacing:
+	+ keyline: Cho phép vị trí nhất quán của các thành phần bên ngoài layout grid. Là các đường thẳng đứng được xác định từ mép màn hình, đo theo gia số 8dp. Nên được sử dụng kết hợp với *responsive layout grid* để đặt các yếu tố nhất quán trong một thiết kế.
+
+	+ padding: Không gian giữa các thành phần UI, được đo theo gia số 8dp hoặc 4dp. Nên sử dụng kết hợp với *responsive layout grid*
+	<img src="images/padding.png"/>
+
+	+ vertical spacing: Đề cập đến chiều cao của một phần tử, độ cao phù hợp với grid 8dp.
+	<img src="images/vertical_spacing.png"/>
+
+	+ increment: Là một phép đo được sử dụng để đo kích thước và vị trí của các thành phần. Là hình vuông có kích thước bất kỳ, nên sử dụng chiều cao của một phần tử tiêu chuẩn (app bar).
+
+- Containers và ratios.
+	+ container: là một hình dạng được sử dụng đại diện cho một khu vực, có thể fix cứng hoặc co kéo theo nội dung.
+	<img src="images/containers.png"/>
+
+	+ ratios: (width:height) Để duy trì tính nhất quán trong bố cục
+	<img src="images/ratios.png"/>
+
+- Touch and click targets:
+	+ Touch target specs: Để cân bằng mật độ thông tin và khả năng sử dụng, các mục tiêu cảm ứng nên có ít nhất 48x48 dp với khoảng cách không gian giữa chúng ít nhất 8dp.
+	<img src="images/touch_target_specs.png"/>
+
+	+ Click targets: Kích thước tối thiểu là 24x24 dp với spacing ít nhất là 8dp
+	<img src="images/click_target.png"/>
+
+## Component behavior
+- Component width: 
+	+ Có thể giữ nguyên hoặc thay đổi kích thước theo bố cục: fixed, fluid
+	+ Được giữ nguyên khi thay đổi bố cục, có thể thay đổi vị trí để phù hợp với bố cục mới: pushed, Overlaid
+
+- Responsive patterns
+	- Các thành phần có thể điều chỉnh kích thước của chúng dựa trên kích thước màn hình và loại thiết bị, chẳng hạn như:
+	+ Các thành phần giao diện ẩn đi với màn hình nhỏ có thể hiển thị đối với màn hình lớn
+	<img src="images/reveal.png"/>
+
+	+ Chuyển thành phần từ dạng này sang dạng khác khi ở màn hình lớn
+	<img src="images/transform.png"/>
+
+	+ Có thể hiển thị nhiều thành phần cùng một lúc nếu có không gian
+	<img src="images/divider.png"/>
+
+	+ Thay đổi bố cục nếu có không gian
+	<img src="images/reflow.png"/>
+
+	+ Mở rộng thành phần.
+	<img src="images/expand.png"/>
+
+	+ Thay đổi vị trí của các thành phần UI phù hợp với kích thước màn hình
+	<img src="images/position.png"/>
+
+## Applying density
+- Việc áp dụng density giúp người dùng có nhìn thấy nhiều thông tin hơn và thao tác với lượng lớn dữ liệu hơn chẳng hạn như danh sách, bảng, biểu mẫu.
+<img src="images/apply_density.png"/>
+- Nguyên tắc:
+	+ Dễ quan sát: Cải thiện trình duyệt và tương tác với số lượng lớn nội dung.
+	+ Độ ưu tiên: Giúp người dùng tập trung bằng cách giảm không gian giữa các hành động.
+	+ Có sẵn: Mật độ hiển thị nhiều nội dung và hành động trên một màn hình.
+- Không nên áp dụng mật độ cao cho các thành phần nhiệm vụ hoặc cảnh báo: date picker, dialog
+- 
+
+# Motion
+- Chuyển động làm cho giao diện người dùng biểu cảm và dễ sử dụng
+## Nguyên tắc
+- Nhiều thông tin: Chuyển động cho thấy mối quan hệ không gian và phân cấp giữa các yếu tố, hành động nào có sẵn và điều gì sẽ xảy ra nếu có một hành động được thực hiện
+- Tập trung: Tập trung sự chú ý vào những gì quan trọng.
+- Biểu cảm: Tạo cảm giác trải nghiệm cho người dùng.
+
+# Color
+- Hệ thống màu hỗ trợ 12 màu có thể được áp dụng với các thành phần, văn bản, biểu tượng và bề mặt.
+	+ Primary: Màu thương hiệu của app, được sử dụng chủ yếu.
+	+ Primary Variant: Một biển thể sáng/tối hơn của màu chính: app bar
+	+ On Primary: Được sử dụng cho các thành phần được hiển thị bên trên các màu chính (văn bản và biểu tượng: đen or trắng)
+	+ Secondary: Màu thương hiệu thứ cấp của app, làm điểm nhấn cho 1 số thành phần cần nổi bật
+	+ Secondary Variant: Một biến thể sáng/tối hơn của màu thương hiệu thứ cấp
+	+ On Secondary: Màu được sử dụng cho các thành phần được hiển thị bên trên các màu thương hiệu thứ cấp
+	+ Background: Màu nền
+	+ On Background: Màu được sử dụng cho các thành phần hiển thị trên màu nền
+	+ Surface: Màu sử dụng cho các bề mặt (drawer, sheets, tab,...)
+	+ On Surface: Màu sử dụng cho các thành phần hiển thị trên màu surface
+	+ Error: Màu sử dụng cho các lỗi (thường là màu đổ)
+	+ On Error: Màu sử dụng cho các thành phần hiển thị trên màu lỗi.
+
+	<img src="images/colors"/>
+
+# Typography
+
+## Sử dụng
+- Chuyển động giúp định hướng người dùng bằng cách hiển thị các yếu tố có liên quan đến nhau.
+- Chuyển động cung cấp phản hồi kịp thời và trạng thái của người dùng như xác thực mật khẩu, load nội dung.
+- Hướng dẫn người dùng: mở khóa màn hình...
+- Kích thích người dùng sử dụng app.
+# Tài liệu tham khảo
+- https://material.io/design/layout/applying-density.html#usage
+
