@@ -50,22 +50,17 @@
 
 - Spacing:
 	+ keyline: Cho phép vị trí nhất quán của các thành phần bên ngoài layout grid. Là các đường thẳng đứng được xác định từ mép màn hình, đo theo gia số 8dp. Nên được sử dụng kết hợp với *responsive layout grid* để đặt các yếu tố nhất quán trong một thiết kế.
-
 	+ padding: Không gian giữa các thành phần UI, được đo theo gia số 8dp hoặc 4dp. Nên sử dụng kết hợp với *responsive layout grid*
-	<img src="images/padding.png"/>
-
 	+ vertical spacing: Đề cập đến chiều cao của một phần tử, độ cao phù hợp với grid 8dp.
-	<img src="images/vertical_spacing.png"/>
-
-	+ increment: Là một phép đo được sử dụng để đo kích thước và vị trí của các thành phần. Là hình vuông có kích thước bất kỳ, nên sử dụng chiều cao của một phần tử tiêu chuẩn (app bar).
+	+ increment: Là một phép đo được sử dụng để đo kích thước và vị trí của các thành phần. Là hình vuông có kích thước bất kỳ, nên sử dụng chiều cao của một phần tử tiêu chuẩn (app bar) để làm gia số.
 
 - Containers và ratios.
-	+ container: là một hình dạng được sử dụng đại diện cho một khu vực, có thể fix cứng hoặc co kéo theo nội dung.
-	<img src="images/containers.png"/>
-
-	+ ratios: (width:height) Để duy trì tính nhất quán trong bố cục
-	<img src="images/ratios.png"/>
-
+	+ container: là một hình dạng được sử dụng đại diện cho một khu vực, có thể fix cứng hoặc co kéo theo nội dung. Các container có thể chứa các thành phần UI khác nhau như image, icon, surface.
+	+ ratios: Là tỉ lệ chiều rộng so với chiều cao của phần tử. Để duy trì tính nhất quán trong bố cục.
+	+ Responsive cropping: Hiển thị hình ảnh một cách linh hoạt.
+		+ Maintain one fixed ratio
+		+ Adapt to different ratios
+		+ Fix image heights.
 - Touch and click targets:
 	+ Touch target specs: Để cân bằng mật độ thông tin và khả năng sử dụng, các mục tiêu cảm ứng nên có ít nhất 48x48 dp với khoảng cách không gian giữa chúng ít nhất 8dp.
 	<img src="images/touch_target_specs.png"/>
@@ -81,22 +76,11 @@
 - Responsive patterns
 	- Các thành phần có thể điều chỉnh kích thước của chúng dựa trên kích thước màn hình và loại thiết bị, chẳng hạn như:
 	+ Các thành phần giao diện ẩn đi với màn hình nhỏ có thể hiển thị đối với màn hình lớn
-	<img src="images/reveal.png"/>
-
 	+ Chuyển thành phần từ dạng này sang dạng khác khi ở màn hình lớn
-	<img src="images/transform.png"/>
-
 	+ Có thể hiển thị nhiều thành phần cùng một lúc nếu có không gian
-	<img src="images/divider.png"/>
-
 	+ Thay đổi bố cục nếu có không gian
-	<img src="images/reflow.png"/>
-
 	+ Mở rộng thành phần.
-	<img src="images/expand.png"/>
-
 	+ Thay đổi vị trí của các thành phần UI phù hợp với kích thước màn hình
-	<img src="images/position.png"/>
 
 ## Applying density
 - Việc áp dụng density giúp người dùng có nhìn thấy nhiều thông tin hơn và thao tác với lượng lớn dữ liệu hơn chẳng hạn như danh sách, bảng, biểu mẫu.
@@ -115,24 +99,7 @@
 - Tập trung: Tập trung sự chú ý vào những gì quan trọng.
 - Biểu cảm: Tạo cảm giác trải nghiệm cho người dùng.
 
-# Color
-- Hệ thống màu hỗ trợ 12 màu có thể được áp dụng với các thành phần, văn bản, biểu tượng và bề mặt.
-	+ Primary: Màu thương hiệu của app, được sử dụng chủ yếu.
-	+ Primary Variant: Một biển thể sáng/tối hơn của màu chính: app bar
-	+ On Primary: Được sử dụng cho các thành phần được hiển thị bên trên các màu chính (văn bản và biểu tượng: đen or trắng)
-	+ Secondary: Màu thương hiệu thứ cấp của app, làm điểm nhấn cho 1 số thành phần cần nổi bật
-	+ Secondary Variant: Một biến thể sáng/tối hơn của màu thương hiệu thứ cấp
-	+ On Secondary: Màu được sử dụng cho các thành phần được hiển thị bên trên các màu thương hiệu thứ cấp
-	+ Background: Màu nền
-	+ On Background: Màu được sử dụng cho các thành phần hiển thị trên màu nền
-	+ Surface: Màu sử dụng cho các bề mặt (drawer, sheets, tab,...)
-	+ On Surface: Màu sử dụng cho các thành phần hiển thị trên màu surface
-	+ Error: Màu sử dụng cho các lỗi (thường là màu đổ)
-	+ On Error: Màu sử dụng cho các thành phần hiển thị trên màu lỗi.
 
-	<img src="images/colors"/>
-
-# Typography
 
 ## Sử dụng
 - Chuyển động giúp định hướng người dùng bằng cách hiển thị các yếu tố có liên quan đến nhau.

@@ -95,56 +95,81 @@
 <img alt="" aria-describedby="baseline-figure-caption-1" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="33.6842105263%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F18NDMry_mNrQ5kMbkVLuklltSbYeEIiG8%2Flayout-spacing-4dp-baslinegrid.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F18NDMry_mNrQ5kMbkVLuklltSbYeEIiG8%2Flayout-spacing-4dp-baslinegrid.png">
 
 - Spacing:
-	+ keyline: được xác định từ mép màn hình, đo theo gia số 8dp. Nên được sử dụng kết hợp với *responsive layout grid* để đặt các yếu tố nhất quán trong một thiết kế.
+	+ keyline: Cho phép vị trí nhất quán của các thành phần bên ngoài layout grid. Là các đường thẳng đứng được xác định từ mép màn hình, đo theo gia số 8dp. Nên được sử dụng kết hợp với *responsive layout grid* để đặt các yếu tố nhất quán trong một thiết kế.
 	
 <img alt="" aria-describedby="spacing-figure-caption-0" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="76.3157894737%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1tFVHB61zE5yb0JNU3dEtya_GeUyQWqn5%2Flayout-spacing-keylinespadding-keylines.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1tFVHB61zE5yb0JNU3dEtya_GeUyQWqn5%2Flayout-spacing-keylinespadding-keylines.png">
 
-	+ padding: Không gian giữa các thành phần UI, được đo theo gia số 8dp hoặc 4dp. Nên sử dụng kết hợp với *responsive layout grid*
-	<img src="images/padding.png"/>
+	+ padding: Không gian giữa các thành phần UI, thay thế cho keyline được đo theo gia số 8dp hoặc 4dp.
+
+	<img alt="" aria-describedby="spacing-figure-caption-3" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="50.0%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1qRYD4sWHoSQs_Gg6jx5Xt_3TYp2CM-5d%2Flayout-spacing-keylinespadding-padding-verthorz.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1qRYD4sWHoSQs_Gg6jx5Xt_3TYp2CM-5d%2Flayout-spacing-keylinespadding-padding-verthorz.png">
 
 	+ vertical spacing: Đề cập đến chiều cao của một phần tử, độ cao phù hợp với grid 8dp.
-	<img src="images/vertical_spacing.png"/>
+	
+<img alt="" aria-describedby="spacing-figure-caption-4" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="50.0%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1ukHGXtjoW-SxqTzYegljgtCi3JHsSFmm%2Flayout-spacing-keylinespadding-verticalspacing.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1ukHGXtjoW-SxqTzYegljgtCi3JHsSFmm%2Flayout-spacing-keylinespadding-verticalspacing.png">
 
 	+ increment: Là một phép đo được sử dụng để đo kích thước và vị trí của các thành phần. Là hình vuông có kích thước bất kỳ, nên sử dụng chiều cao của một phần tử tiêu chuẩn (app bar).
 
+<img alt="" aria-describedby="spacing-figure-caption-5" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="50.0%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1HNf_5p84x3WNVxrs0T2iOqjGXCwRaVIt%2Flayout-spacing-increments-example.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1HNf_5p84x3WNVxrs0T2iOqjGXCwRaVIt%2Flayout-spacing-increments-example.png">
+
 - Containers và ratios.
 	+ container: là một hình dạng được sử dụng đại diện cho một khu vực, có thể fix cứng hoặc co kéo theo nội dung.
-	<img src="images/containers.png"/>
+	
+<img alt="" aria-describedby="containers-aspect-ratios-figure-caption-1" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="50.0%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1EfIrWcBPIOi6i7eCpoqd-kioV8H-Asbu%2Flayout-spacingmethods-containers.gif" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1EfIrWcBPIOi6i7eCpoqd-kioV8H-Asbu%2Flayout-spacingmethods-containers.gif">
 
-	+ ratios: (width:height) Để duy trì tính nhất quán trong bố cục
-	<img src="images/ratios.png"/>
+	+ ratios: Là tỉ lệ chiều rộng so với chiều cao của phần tử. Để duy trì tính nhất quán trong bố cục, các tỷ lệ khung hình sau được khuyến khích sử dụng.
+
+<img alt="" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="50.0%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1AjZXUtHEYC-FEwEjcp4xbXqNHMeloLEF%2Flayout-unitsmeasurements-dev-aspectratio.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1AjZXUtHEYC-FEwEjcp4xbXqNHMeloLEF%2Flayout-unitsmeasurements-dev-aspectratio.png">
 
 - Touch and click targets:
 	+ Touch target specs: Để cân bằng mật độ thông tin và khả năng sử dụng, các mục tiêu cảm ứng nên có ít nhất 48x48 dp với khoảng cách không gian giữa chúng ít nhất 8dp.
-	<img src="images/touch_target_specs.png"/>
+
+<img alt="" aria-describedby="touch-targets-figure-caption-0" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="34.2105263158%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1V-52jQzdoLsqxrz_JMp20Zbp_a2Zc2gp%2Flayout-spacing-touchtargets.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1V-52jQzdoLsqxrz_JMp20Zbp_a2Zc2gp%2Flayout-spacing-touchtargets.png">
 
 	+ Click targets: Kích thước tối thiểu là 24x24 dp với spacing ít nhất là 8dp
-	<img src="images/click_target.png"/>
+	
+<img alt="" aria-describedby="touch-targets-figure-caption-1" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="36.8421052632%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1CCpcUPwnMC-r-tT-cDz8U8J6PzkGBtkc%2Flayout-spacing-clicktargets.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1CCpcUPwnMC-r-tT-cDz8U8J6PzkGBtkc%2Flayout-spacing-clicktargets.png">
 
 ## Component behavior
 - Component width: 
 	+ Có thể giữ nguyên hoặc thay đổi kích thước theo bố cục: fixed, fluid
-	+ Được giữ nguyên khi thay đổi bố cục, có thể thay đổi vị trí để phù hợp với bố cục mới: pushed, Overlaid
+
+<img alt="" aria-describedby="component-width-figure-caption-0" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="73.7704918033%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F11dS_5T4T7m27ryPpYnIh5yM6hcCRDY8K%2Flayout-element-behavior-fixed-width.gif" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F11dS_5T4T7m27ryPpYnIh5yM6hcCRDY8K%2Flayout-element-behavior-fixed-width.gif">
+
+<img alt="" aria-describedby="component-width-figure-caption-1" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="73.7704918033%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1W3mrTN71O4IH1knmIJv0EXHVy9Y2fppd%2Flayout-element-behavior-fluid-width.gif" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1W3mrTN71O4IH1knmIJv0EXHVy9Y2fppd%2Flayout-element-behavior-fluid-width.gif">
+
+<img alt="" aria-describedby="component-width-figure-caption-2" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="73.7704918033%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1RslR2Zd6aGip8ndBN4cZuYmVxykE8bzE%2Flayout-element-behavior-fluid-dont-01.gif" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1RslR2Zd6aGip8ndBN4cZuYmVxykE8bzE%2Flayout-element-behavior-fluid-dont-01.gif">
+
+	+ Các thành phần được fixed width được giữ nguyên khi thay đổi bố cục, có thể thay đổi vị trí để phù hợp với bố cục mới: pushed, Overlaid
+
+<img alt="" aria-describedby="component-width-figure-caption-4" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="73.7704918033%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1qUtj2oEv4Q40P1wVrlePjxmmK-emW99g%2Flayout-element-behavior-push.gif" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1qUtj2oEv4Q40P1wVrlePjxmmK-emW99g%2Flayout-element-behavior-push.gif">
+
+<img alt="" aria-describedby="component-width-figure-caption-5" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="73.7704918033%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F11ZQxUyZvmrd5cxsDs73k09KcVrgTuaUE%2Flayout-element-behavior-overlaid.gif" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F11ZQxUyZvmrd5cxsDs73k09KcVrgTuaUE%2Flayout-element-behavior-overlaid.gif">
 
 - Responsive patterns
 	- Các thành phần có thể điều chỉnh kích thước của chúng dựa trên kích thước màn hình và loại thiết bị, chẳng hạn như:
 	+ Các thành phần giao diện ẩn đi với màn hình nhỏ có thể hiển thị đối với màn hình lớn
-	<img src="images/reveal.png"/>
+	
+<img alt="" aria-describedby="responsive-patterns-figure-caption-0" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="73.6842105263%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1eEEDI_xEyFFa6y-_yyRxyP-TpgsPb2Pr%2Flayout-responsive-patterns-reveal-navdrawer.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1eEEDI_xEyFFa6y-_yyRxyP-TpgsPb2Pr%2Flayout-responsive-patterns-reveal-navdrawer.png">
 
 	+ Chuyển thành phần từ dạng này sang dạng khác khi ở màn hình lớn
-	<img src="images/transform.png"/>
+	
+<img alt="" aria-describedby="responsive-patterns-figure-caption-3" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="73.6842105263%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1vz5WkJG9K_dyBrfJHekJ8c5Wsol-yN9O%2Flayout-responsive-patterns-transform-navdrawer.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1vz5WkJG9K_dyBrfJHekJ8c5Wsol-yN9O%2Flayout-responsive-patterns-transform-navdrawer.png">
 
 	+ Có thể hiển thị nhiều thành phần cùng một lúc nếu có không gian
-	<img src="images/divider.png"/>
+	
+<img alt="" aria-describedby="responsive-patterns-figure-caption-6" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="73.6842105263%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1oIscQOmfgUeVn7YHdm4j103W8K3SONg_%2Flayout-responsive-patterns-transform-divide-1.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1oIscQOmfgUeVn7YHdm4j103W8K3SONg_%2Flayout-responsive-patterns-transform-divide-1.png">
 
 	+ Thay đổi bố cục nếu có không gian
-	<img src="images/reflow.png"/>
 
-	+ Mở rộng thành phần.
-	<img src="images/expand.png"/>
+<img alt="" aria-describedby="responsive-patterns-figure-caption-9" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="73.6842105263%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1VXqd6WD0BvreENnNk0g_dqtyUv8rAMsT%2Flayout-responsive-patterns-transform-reflow-2.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1VXqd6WD0BvreENnNk0g_dqtyUv8rAMsT%2Flayout-responsive-patterns-transform-reflow-2.png">
+
+	+ Mở rộng thành phần nếu có nhiều không gian
+	
+<img alt="" aria-describedby="responsive-patterns-figure-caption-12" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="73.6842105263%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1apntZGLUuUlSkhpnTJe2ikMeTIFP1cKJ%2Flayout-responsive-patterns-transform-expand-2.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1apntZGLUuUlSkhpnTJe2ikMeTIFP1cKJ%2Flayout-responsive-patterns-transform-expand-2.png">
 
 	+ Thay đổi vị trí của các thành phần UI phù hợp với kích thước màn hình
-	<img src="images/position.png"/>
+	
+<img alt="" aria-describedby="responsive-patterns-figure-caption-13" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="73.6842105263%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1pmCqvMVPajmoDsmxmL-JBz4zqy88dSEa%2Flayout-responsive-patterns-transform-position-1.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1pmCqvMVPajmoDsmxmL-JBz4zqy88dSEa%2Flayout-responsive-patterns-transform-position-1.png">
 
 ## Applying density
 - Việc áp dụng density giúp người dùng có nhìn thấy nhiều thông tin hơn và thao tác với lượng lớn dữ liệu hơn chẳng hạn như danh sách, bảng, biểu mẫu.
@@ -152,41 +177,56 @@
 - Nguyên tắc:
 	+ Dễ quan sát: Cải thiện trình duyệt và tương tác với số lượng lớn nội dung.
 	+ Độ ưu tiên: Giúp người dùng tập trung bằng cách giảm không gian giữa các hành động.
-	+ Có sẵn: Mật độ hiển thị nhiều nội dung và hành động trên một màn hình.
-- Không nên áp dụng mật độ cao cho các thành phần nhiệm vụ hoặc cảnh báo: date picker, dialog
-- 
+	+ Tính có sẵn: Mật độ hiển thị nhiều nội dung và hành động trên một màn hình.
+### Khi nào nên áp dụng density
+- Các thành phần có mật độ cao cho phép user tương tác với lượng thông tin nhiều hơn. Danh sách, bảng, các biểu mẫu dài phù hợp để áp dụng density
+
+<img alt="" aria-describedby="usage-figure-caption-0" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="50.0%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1YKHvHftsbsUjMdrUh0ilymDUZdWEnXMV%2Flayout-density-rows.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1YKHvHftsbsUjMdrUh0ilymDUZdWEnXMV%2Flayout-density-rows.png">
+
+<img alt="" aria-describedby="usage-figure-caption-1" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="50.0%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1hUoPi8ZbKsQ7VQGknaPYEe03mw1Gbhc9%2Flayout-density-forms.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1hUoPi8ZbKsQ7VQGknaPYEe03mw1Gbhc9%2Flayout-density-forms.png">
+
+### Khi nào không nên áp dụng density
+- Không nên áp dụng cho các thành phần tasks hoặc alert-based
+
+<img alt="" aria-describedby="usage-figure-caption-3" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="47.3684210526%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1TenJuiDEbAnfKRFPv0qr60ViZHTm7UtP%2Ffocused-tasks-dont.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1TenJuiDEbAnfKRFPv0qr60ViZHTm7UtP%2Ffocused-tasks-dont.png">
+
+<img alt="" aria-describedby="usage-figure-caption-4" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="34.2105263158%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1wIvFCZUgDcycFdMbSppyAV1701N0ewMw%2Falerts-dont.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1wIvFCZUgDcycFdMbSppyAV1701N0ewMw%2Falerts-dont.png">
+
+### Typographic debsity
+- Line height: là khoảng cách giữa các dòng text. Có thể được sử dụng như 1 cách để tạo mật độ trong typographic layouts. Đảm bảo vẫn sử dụng lưới cơ sở 4dp.
+
+<img alt="" aria-describedby="typographic-density-figure-caption-0" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="50.0%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1Mu565sAKVIRQVQSNxbKNLBKiewkwI-ge%2Flayout-line-height-1.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1Mu565sAKVIRQVQSNxbKNLBKiewkwI-ge%2Flayout-line-height-1.png">
 
 # Motion
-- Chuyển động làm cho giao diện người dùng biểu cảm và dễ sử dụng
-## Nguyên tắc
-- Nhiều thông tin: Chuyển động cho thấy mối quan hệ không gian và phân cấp giữa các yếu tố, hành động nào có sẵn và điều gì sẽ xảy ra nếu có một hành động được thực hiện
-- Tập trung: Tập trung sự chú ý vào những gì quan trọng.
-- Biểu cảm: Tạo cảm giác trải nghiệm cho người dùng.
+## Understanding motion
+- Motion giúp định hướng người dùng bằng cách hiển thị các thành phần có liên quan với nhau
 
-# Color
-- Hệ thống màu hỗ trợ 12 màu có thể được áp dụng với các thành phần, văn bản, biểu tượng và bề mặt.
-	+ Primary: Màu thương hiệu của app, được sử dụng chủ yếu.
-	+ Primary Variant: Một biển thể sáng/tối hơn của màu chính: app bar
-	+ On Primary: Được sử dụng cho các thành phần được hiển thị bên trên các màu chính (văn bản và biểu tượng: đen or trắng)
-	+ Secondary: Màu thương hiệu thứ cấp của app, làm điểm nhấn cho 1 số thành phần cần nổi bật
-	+ Secondary Variant: Một biến thể sáng/tối hơn của màu thương hiệu thứ cấp
-	+ On Secondary: Màu được sử dụng cho các thành phần được hiển thị bên trên các màu thương hiệu thứ cấp
-	+ Background: Màu nền
-	+ On Background: Màu được sử dụng cho các thành phần hiển thị trên màu nền
-	+ Surface: Màu sử dụng cho các bề mặt (drawer, sheets, tab,...)
-	+ On Surface: Màu sử dụng cho các thành phần hiển thị trên màu surface
-	+ Error: Màu sử dụng cho các lỗi (thường là màu đổ)
-	+ On Error: Màu sử dụng cho các thành phần hiển thị trên màu lỗi.
+<video class="video-player__video animatable js-video-player js-video-load anim-appear" loop="" muted="" preload="metadata" tabindex="0">
+<source data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1DenoCsHNb_H1S1zErzmGCxhz6wjmdO8y%2F01-hierarchy-parentchild.mp4" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1DenoCsHNb_H1S1zErzmGCxhz6wjmdO8y%2F01-hierarchy-parentchild.mp4" type="video/mp4"> </video>
 
-	<img src="images/colors"/>
+- Motion cung cấp phản hồi kịp thời và trạng thái của hành động người dùng.
 
-# Typography
+<video class="video-player__video animatable js-video-player js-video-load anim-appear" loop="" muted="" poster="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1bYOPy6MGEJbAGaP5zg2tV_SGr6-4urHs%2F02-feedback-password-pos.png" preload="metadata" tabindex="0">
+<source data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1G-MNFco8ApWpcnN5hkbiS2QnK1f1jW-Z%2F02-feedback-password.mp4" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1G-MNFco8ApWpcnN5hkbiS2QnK1f1jW-Z%2F02-feedback-password.mp4" type="video/mp4"> </video>
 
-## Sử dụng
-- Chuyển động giúp định hướng người dùng bằng cách hiển thị các yếu tố có liên quan đến nhau.
-- Chuyển động cung cấp phản hồi kịp thời và trạng thái của người dùng như xác thực mật khẩu, load nội dung.
-- Hướng dẫn người dùng: mở khóa màn hình...
-- Kích thích người dùng sử dụng app.
+- Motion giúp hướng dẫn người dùng cách thực hiện các hành động.
+
+<video class="video-player__video animatable js-video-player js-video-load anim-appear" loop="" muted="" poster="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1H_f3Wz9c_LPFkepKZl2wEAullPDm5pdW%2F03-usereducation-gesture-pos.png" preload="metadata" tabindex="0">
+<source data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1FhotRqhTI6ITEzsJnI6RUl4CRa9FlAay%2F03-usereducation-gesture.mp4" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1FhotRqhTI6ITEzsJnI6RUl4CRa9FlAay%2F03-usereducation-gesture.mp4" type="video/mp4"> </video>
+
+- Motion tạo sự thu hút người dùng tương tác với app.
+
+<video class="video-player__video animatable js-video-player js-video-load anim-appear" loop="" muted="" preload="metadata" tabindex="0">
+<source data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F19Ms-MRmEZ2cGQNicpePPRjHxxa0NkxIm%2F04-juggler.mp4" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F19Ms-MRmEZ2cGQNicpePPRjHxxa0NkxIm%2F04-juggler.mp4" type="video/mp4"> </video>
+
+## Nguyên tắc Animation trong Material Design
+### Tất cả các thành phần giao diện phải phù hợp với logic tổng thể duy nhất.
+- Tạo ra một user flow ảnh hưởng đáng kể tới trải nghiệm người dùng trong ngữ cảnh của ứng dụng.
+
+<img class="ly lz gp p q go ae gm" width="700" height="525" src="https://miro.medium.com/max/700/1*UOFtfASaoslBm62FWr9Nkg.gif">
+
 # Tài liệu tham khảo
 - https://material.io/design/layout/applying-density.html#usage
+- https://uxplanet.org/10-principles-of-animation-in-material-design-53b870e74629
+- https://proandroiddev.com/playing-with-material-design-transitions-b3ea90c5794c
 
