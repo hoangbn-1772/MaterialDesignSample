@@ -219,11 +219,43 @@
 <video class="video-player__video animatable js-video-player js-video-load anim-appear" loop="" muted="" preload="metadata" tabindex="0">
 <source data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F19Ms-MRmEZ2cGQNicpePPRjHxxa0NkxIm%2F04-juggler.mp4" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F19Ms-MRmEZ2cGQNicpePPRjHxxa0NkxIm%2F04-juggler.mp4" type="video/mp4"> </video>
 
+- Tính liên tục được thể hiện bằng một hoặc nhiều kỹ thuật sau:
+	+ Tweening (FAB): Áp dụng cho 1 thành phần hoặc thành phần theo thời gian
+	+ Fading (mờ dần): Ví dụ chuyển đổi giữa các hình ảnh.
+	+ Shared transformation
+- Tham khảo thêm về các kỹ thuật: https://material.io/design/motion/understanding-motion.html#expressing-continuity
+
 ## Nguyên tắc Animation trong Material Design
-### Tất cả các thành phần giao diện phải phù hợp với logic tổng thể duy nhất.
-- Tạo ra một user flow ảnh hưởng đáng kể tới trải nghiệm người dùng trong ngữ cảnh của ứng dụng.
+- Tất cả các thành phần giao diện phải phù hợp với logic tổng thể duy nhất.
+	+ Tạo ra một user flow ảnh hưởng đáng kể tới trải nghiệm người dùng trong ngữ cảnh của ứng dụng.
+	+ Easing một công cụ làm cho animation được cảm nhận theo cách tự nhiên hơn (CoordinatorLayout và CollapsingToolbarLayout)
 
 <img class="ly lz gp p q go ae gm" width="700" height="525" src="https://miro.medium.com/max/700/1*UOFtfASaoslBm62FWr9Nkg.gif">
+
+- Đảm bảo các thành phần tăng tốc dần dần và làm chậm
+	+ Làm cho quá trình chuyển đổi liền mạch, hợp lý và thực tế.
+- Tận dụng các icon animations
+	+ Một cách tiếp cận mới mẻ, tạo ra ảnh hưởng tích cực đến cả dịch vụ
+
+<img class="mg mh go n o gn ab gl" width="700" height="525" src="https://miro.medium.com/max/700/1*RZO86BqcHl9u9LN4oIJ6AQ.gif">
+
+- Tạo thời gian khác nhau cho các mục chuyển động khác nhau
+	+ Việc trình bày tất cả các thành phần cùng 1 lúc khiến người dùng mất tập trung, không nhận ra nơi nào cần focus.
+- Sự dịch chuyển đối tượng phải được phối hợp theo cùng một hướng
+
+<img class="mg mh go n o gn ab gl" width="600" height="450" src="https://miro.medium.com/max/600/1*qiYzKkv4Tp0rFdHYfUj4gA.gif">
+
+- Tất cả các item sẽ có hiệu ứng khi chạm vào.
+- Xây dựng một sự chuyển giao mượt mà từ trang này sang trang khác.
+
+<img class="mg mh go n o gn ab gl" width="700" height="525" src="https://miro.medium.com/max/700/1*KMSBo46IhwPf9m3bMijFZA.gif">
+
+- Hiệu ứng hình ảnh
+- Xác định những thành phần nào cần phải focus trước khi tạo animation
+- Duration
+	+ 200-500ms là tốc độ animation tốt nhất
+
+<img class="mg mh go n o gn ab gl" width="700" height="525" src="https://miro.medium.com/max/700/1*MeE8FiUThQy341emVDTbCQ.gif">
 
 # Tài liệu tham khảo
 - https://material.io/design/layout/applying-density.html#usage

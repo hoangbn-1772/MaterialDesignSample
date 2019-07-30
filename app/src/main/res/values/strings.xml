@@ -4,4 +4,16 @@
     <string name="action_location">location\\</string>
     <string name="action_taxi">taxi</string>
     <string name="action_change_colors">Change Color</string>
+    <string name="accelerate_decelerate">Accelerate Decelerate</string>
+    <string name="accelerate">Accelerate</string>
+    <string name="decelerate">Decelerate</string>
+    <string name="anticipate">AnticipateI</string>
+    <string name="anticipate_overshoot">AnticipateOvershoot</string>
+    <string name="bounce">Bounce</string>
+    <string name="cycle">Cycle</string>
+    <string name="linear">Linear</string>
+    <string name="over_shoot">OverShoot</string>
+    <string name="fast_out_linear_in">FastOutLinearIn</string>
+    <string name="fast_out_slow_in">FastOutSlowIn</string>
+    <string name="easing_type">Android Move Transition Interpolator</string>
 </resources>
