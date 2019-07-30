@@ -1,5 +1,6 @@
 package com.example.materialdesignsample.ui.main
 
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.transition.ChangeBounds
@@ -9,7 +10,16 @@ import android.view.Gravity
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
-import android.view.animation.*
+import android.view.animation.AccelerateDecelerateInterpolator
+import android.view.animation.AccelerateInterpolator
+import android.view.animation.AnticipateInterpolator
+import android.view.animation.AnticipateOvershootInterpolator
+import android.view.animation.BaseInterpolator
+import android.view.animation.BounceInterpolator
+import android.view.animation.CycleInterpolator
+import android.view.animation.DecelerateInterpolator
+import android.view.animation.LinearInterpolator
+import android.view.animation.OvershootInterpolator
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
@@ -19,7 +29,21 @@ import com.arlib.floatingsearchview.FloatingSearchView
 import com.arlib.floatingsearchview.suggestions.model.SearchSuggestion
 import com.example.materialdesignsample.R
 import com.google.android.material.appbar.AppBarLayout
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_main.app_bar
+import kotlinx.android.synthetic.main.activity_main.btn_accelerate
+import kotlinx.android.synthetic.main.activity_main.btn_accelerate_decelerate
+import kotlinx.android.synthetic.main.activity_main.btn_anticipate
+import kotlinx.android.synthetic.main.activity_main.btn_anticipate_overshoot
+import kotlinx.android.synthetic.main.activity_main.btn_bounce
+import kotlinx.android.synthetic.main.activity_main.btn_cycle
+import kotlinx.android.synthetic.main.activity_main.btn_decelerate
+import kotlinx.android.synthetic.main.activity_main.btn_fast_out_linear_in
+import kotlinx.android.synthetic.main.activity_main.btn_fast_out_slow_in
+import kotlinx.android.synthetic.main.activity_main.btn_linear
+import kotlinx.android.synthetic.main.activity_main.btn_over_shoot
+import kotlinx.android.synthetic.main.activity_main.btn_transition_screen
+import kotlinx.android.synthetic.main.activity_main.floating_search_view
+import kotlinx.android.synthetic.main.activity_main.root_container
 
 class MainActivity : AppCompatActivity(), AppBarLayout.OnOffsetChangedListener,
     FloatingSearchView.OnQueryChangeListener, FloatingSearchView.OnSearchListener,
@@ -105,6 +129,8 @@ class MainActivity : AppCompatActivity(), AppBarLayout.OnOffsetChangedListener,
                     moveButtonPosition(button)
                 }
             }
+
+            R.id.btn_transition_screen -> moveScreen()
         }
     }
 
@@ -117,20 +143,16 @@ class MainActivity : AppCompatActivity(), AppBarLayout.OnOffsetChangedListener,
             floating_search_view?.clearSuggestions()
         } else {
             floating_search_view?.showProgress()
-
         }
     }
 
     override fun onSearchAction(currentQuery: String?) {
-
     }
 
     override fun onSuggestionClicked(searchSuggestion: SearchSuggestion?) {
-
     }
 
     override fun onHomeClicked() {
-
     }
 
     override fun onActionMenuItemSelected(item: MenuItem?) {
@@ -141,7 +163,6 @@ class MainActivity : AppCompatActivity(), AppBarLayout.OnOffsetChangedListener,
 
     override fun onFocus() {
     }
-
 
     private fun initComponents() {
         transition = ChangeBounds()
@@ -158,6 +179,7 @@ class MainActivity : AppCompatActivity(), AppBarLayout.OnOffsetChangedListener,
         btn_over_shoot?.setOnClickListener(this)
         btn_fast_out_linear_in?.setOnClickListener(this)
         btn_fast_out_slow_in?.setOnClickListener(this)
+        btn_transition_screen?.setOnClickListener(this)
     }
 
     private fun moveButtonWithTransitionEffect(button: AppCompatButton, interpolator: BaseInterpolator) {
@@ -178,7 +200,8 @@ class MainActivity : AppCompatActivity(), AppBarLayout.OnOffsetChangedListener,
     }
 
     private fun moveButtonPosition(button: AppCompatButton) {
-        val newLinearLayoutParams = LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT)
+        val newLinearLayoutParams =
+            LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT)
 
         val layoutParams = button.layoutParams
 
@@ -193,6 +216,12 @@ class MainActivity : AppCompatActivity(), AppBarLayout.OnOffsetChangedListener,
         }
 
         button.layoutParams = newLinearLayoutParams
+    }
+
+    private fun moveScreen() {
+        Intent(this, TransitionScreenActivity::class.java).apply {
+            startActivity(this)
+        }
     }
 
     companion object {
