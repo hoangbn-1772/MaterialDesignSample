@@ -90,22 +90,6 @@
 	+ Độ ưu tiên: Giúp người dùng tập trung bằng cách giảm không gian giữa các hành động.
 	+ Có sẵn: Mật độ hiển thị nhiều nội dung và hành động trên một màn hình.
 - Không nên áp dụng mật độ cao cho các thành phần nhiệm vụ hoặc cảnh báo: date picker, dialog
-- 
-
-# Motion
-- Chuyển động làm cho giao diện người dùng biểu cảm và dễ sử dụng
-## Nguyên tắc
-- Nhiều thông tin: Chuyển động cho thấy mối quan hệ không gian và phân cấp giữa các yếu tố, hành động nào có sẵn và điều gì sẽ xảy ra nếu có một hành động được thực hiện
-- Tập trung: Tập trung sự chú ý vào những gì quan trọng.
-- Biểu cảm: Tạo cảm giác trải nghiệm cho người dùng.
-
-
-
-## Sử dụng
-- Chuyển động giúp định hướng người dùng bằng cách hiển thị các yếu tố có liên quan đến nhau.
-- Chuyển động cung cấp phản hồi kịp thời và trạng thái của người dùng như xác thực mật khẩu, load nội dung.
-- Hướng dẫn người dùng: mở khóa màn hình...
-- Kích thích người dùng sử dụng app.
 # Tài liệu tham khảo
 - https://material.io/design/layout/applying-density.html#usage
 

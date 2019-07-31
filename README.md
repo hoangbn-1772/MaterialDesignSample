@@ -199,27 +199,15 @@
 
 # Motion
 ## Understanding motion
-- Motion giúp định hướng người dùng bằng cách hiển thị các thành phần có liên quan với nhau
+- Motion giúp định hướng người dùng bằng cách hiển thị các thành phần có liên quan với nhau: https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1DenoCsHNb_H1S1zErzmGCxhz6wjmdO8y%2F01-hierarchy-parentchild.mp4
 
-<video class="video-player__video animatable js-video-player js-video-load anim-appear" loop="" muted="" preload="metadata" tabindex="0">
-<source data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1DenoCsHNb_H1S1zErzmGCxhz6wjmdO8y%2F01-hierarchy-parentchild.mp4" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1DenoCsHNb_H1S1zErzmGCxhz6wjmdO8y%2F01-hierarchy-parentchild.mp4" type="video/mp4"> </video>
+- Motion cung cấp phản hồi kịp thời và trạng thái của hành động người dùng: src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1G-MNFco8ApWpcnN5hkbiS2QnK1f1jW-Z%2F02-feedback-password.mp4
 
-- Motion cung cấp phản hồi kịp thời và trạng thái của hành động người dùng.
+- Motion giúp hướng dẫn người dùng cách thực hiện các hành động: https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1FhotRqhTI6ITEzsJnI6RUl4CRa9FlAay%2F03-usereducation-gesture.mp4
 
-<video class="video-player__video animatable js-video-player js-video-load anim-appear" loop="" muted="" poster="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1bYOPy6MGEJbAGaP5zg2tV_SGr6-4urHs%2F02-feedback-password-pos.png" preload="metadata" tabindex="0">
-<source data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1G-MNFco8ApWpcnN5hkbiS2QnK1f1jW-Z%2F02-feedback-password.mp4" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1G-MNFco8ApWpcnN5hkbiS2QnK1f1jW-Z%2F02-feedback-password.mp4" type="video/mp4"> </video>
+- Motion tạo sự thu hút người dùng tương tác với app: https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F19Ms-MRmEZ2cGQNicpePPRjHxxa0NkxIm%2F04-juggler.mp4
 
-- Motion giúp hướng dẫn người dùng cách thực hiện các hành động.
-
-<video class="video-player__video animatable js-video-player js-video-load anim-appear" loop="" muted="" poster="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1H_f3Wz9c_LPFkepKZl2wEAullPDm5pdW%2F03-usereducation-gesture-pos.png" preload="metadata" tabindex="0">
-<source data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1FhotRqhTI6ITEzsJnI6RUl4CRa9FlAay%2F03-usereducation-gesture.mp4" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1FhotRqhTI6ITEzsJnI6RUl4CRa9FlAay%2F03-usereducation-gesture.mp4" type="video/mp4"> </video>
-
-- Motion tạo sự thu hút người dùng tương tác với app.
-
-<video class="video-player__video animatable js-video-player js-video-load anim-appear" loop="" muted="" preload="metadata" tabindex="0">
-<source data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F19Ms-MRmEZ2cGQNicpePPRjHxxa0NkxIm%2F04-juggler.mp4" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F19Ms-MRmEZ2cGQNicpePPRjHxxa0NkxIm%2F04-juggler.mp4" type="video/mp4"> </video>
-
-- Tính liên tục được thể hiện bằng một hoặc nhiều kỹ thuật sau:
+- Motion hướng sự chú ý của người dùng một cách trơn tru, không bị gián đoạn. Khi UI thay đổi, motion cung cấp tính liên tục giữa các yếu tố trước và sau. Tính liên tục được thể hiện bằng một hoặc nhiều kỹ thuật sau:
 	+ Tweening (FAB): Áp dụng cho 1 thành phần hoặc thành phần theo thời gian
 	+ Fading (mờ dần): Ví dụ chuyển đổi giữa các hình ảnh.
 	+ Shared transformation
