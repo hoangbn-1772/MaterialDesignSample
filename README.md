@@ -3,15 +3,24 @@
 # Layout
 - Material Design layouts khuyến khích tính nhất quán giữa các nền tảng, môi trường và kích thước màn hình bằng cách sử dụng các yếu tố và khoảng cách đồng nhất.
 ## Nguyên tắc
-- Predictable (dự đoán): UI nên sử dụng bố cục trực quan và có thể dự đoán được, với các vùng UI và tổ chức không gian nhất quán.
+- Predictable (dự đoán): UI nên sử dụng bố cục trực quan và thân thuộc với người dùng.
 - Consistent (thích hợp): Layout nên sử dụng grid, keyline, padding nhất quán.
-- Response (đáp ứng): Layout có khả năng đáp ứng với đầu vào từ user, device và screen.
+- Response (đáp ứng): Layout có khả năng đáp ứng với các tương tác từ user, device và screen.
 
 ## Structure
-- Material Design layout được cân bằng trực quan. Hầu hết các phép đo đều phù hợp với grid 8dp, điều chỉnh cả khoảng cách và bố cục tổng thể.
+- Material Design layout tạo sự cân bằng thị giác cho người dùng, tạo một giao diện nhất quán, đẹp, chuyên nghiệp. Hầu hết các phép đo đều phù hợp với grid 8dp  điều chỉnh cả khoảng cách và bố cục tổng thể.
 - Các thành phần nhỏ hơn như biểu tượng, kiểu chữ có thể căn chỉnh theo grid 4dp.
 
-<img alt="" aria-describedby="usage-figure-caption-0" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="33.6842105263%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1BwORvuZ0Pv88f7m0z1BoAWaY0q8Y_H8K%2Flayout-unitsmeasurements-dev-grid.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1BwORvuZ0Pv88f7m0z1BoAWaY0q8Y_H8K%2Flayout-unitsmeasurements-dev-grid.png">
+<img class="ml mm gu n o gt ab gr" width="1000" height="441" src="https://miro.medium.com/max/1000/1*Kcx60oAWZioon-V_RR-IQA.png">
+
+- Một giao diện nhất quán tạo ra sự chuyên nghiệp và độ tin cậy.
+- Tại sao lại là 8dp? 
+	+ Do sự đa dạng về kích thước màn hình và mật độ pixel tạo nên sự phức tạp cho các nhà thiết kế.
+	+ Phần lớn kích thước màn hình phổ biến chia hết cho 8, giúp dễ dàng điều chỉnh
+- Giá trị của hệ thống lưới 8dp:
+	+ For designers
+	+ For teams
+	+ For users
 
 ## Pixel density
 - Tính toán mật độ điểm ảnh (pixel): <b>Screen density = Screen width (or height) in pixels / Screen width (or height) đơn vị inche</b>
@@ -249,4 +258,5 @@
 - https://material.io/design/layout/applying-density.html#usage
 - https://uxplanet.org/10-principles-of-animation-in-material-design-53b870e74629
 - https://proandroiddev.com/playing-with-material-design-transitions-b3ea90c5794c
+- https://builttoadapt.io/intro-to-the-8-point-grid-system-d2573cde8632
 
