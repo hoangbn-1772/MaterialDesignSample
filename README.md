@@ -18,7 +18,7 @@
 	+ Do sự đa dạng về kích thước màn hình và mật độ pixel tạo nên sự phức tạp cho các nhà thiết kế.
 	+ Phần lớn kích thước màn hình phổ biến chia hết cho 8, giúp dễ dàng điều chỉnh
 - Giá trị của hệ thống lưới 8dp:
-	+ For designers: Hiệu quả, không phải tính toán nhiều khi duy trì chất lượng giữa các thành phần.
+	+ For designers: Hiệu quả, không phải tính toán nhiều.
 	+ For teams: Tạo sự thống nhất giữa Designer và Dev
 	+ For users: Tạo sự nhất quán, độ tin cậy ch
 
