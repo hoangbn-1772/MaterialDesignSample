@@ -3,18 +3,27 @@
 # Layout
 - Material Design layouts khuyến khích tính nhất quán giữa các nền tảng, môi trường và kích thước màn hình bằng cách sử dụng các yếu tố và khoảng cách đồng nhất.
 ## Nguyên tắc
-- Predictable (dự đoán): UI nên sử dụng bố cục trực quan và có thể dự đoán được, với các vùng UI và tổ chức không gian nhất quán.
+- Predictable (dự đoán): UI nên sử dụng bố cục trực quan và thân thuộc với người dùng.
 - Consistent (thích hợp): Layout nên sử dụng grid, keyline, padding nhất quán.
-- Response (đáp ứng): Layout có khả năng đáp ứng với đầu vào từ user, device và screen.
+- Response (đáp ứng): Layout có khả năng đáp ứng với các tương tác từ user, device và screen.
 
 ## Structure
-- Material Design layout được cân bằng trực quan. Hầu hết các phép đo đều phù hợp với grid 8dp, điều chỉnh cả khoảng cách và bố cục tổng thể.
+- Material Design layout tạo sự cân bằng thị giác cho người dùng, tạo một giao diện nhất quán, đẹp, chuyên nghiệp. Hầu hết các phép đo đều phù hợp với grid 8dp  điều chỉnh cả khoảng cách và bố cục tổng thể.
 - Các thành phần nhỏ hơn như biểu tượng, kiểu chữ có thể căn chỉnh theo grid 4dp.
 
-<img alt="" aria-describedby="usage-figure-caption-0" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="33.6842105263%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1BwORvuZ0Pv88f7m0z1BoAWaY0q8Y_H8K%2Flayout-unitsmeasurements-dev-grid.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1BwORvuZ0Pv88f7m0z1BoAWaY0q8Y_H8K%2Flayout-unitsmeasurements-dev-grid.png">
+<img class="ml mm gu n o gt ab gr" width="1000" height="441" src="https://miro.medium.com/max/1000/1*Kcx60oAWZioon-V_RR-IQA.png">
+
+- Một giao diện nhất quán tạo ra sự chuyên nghiệp và độ tin cậy.
+- Tại sao lại là 8dp? 
+	+ Do sự đa dạng về kích thước màn hình và mật độ pixel tạo nên sự phức tạp cho các nhà thiết kế.
+	+ Phần lớn kích thước màn hình phổ biến chia hết cho 8, giúp dễ dàng điều chỉnh
+- Giá trị của hệ thống lưới 8dp:
+	+ For designers: Hiệu quả, không phải tính toán nhiều.
+	+ For teams: Tạo sự thống nhất giữa Designer và Dev
+	+ For users: Tạo sự nhất quán, độ tin cậy ch
 
 ## Pixel density
-- Tính toán mật độ điểm ảnh (pixel): <b>Screen density = Screen width (or height) in pixels / Screen width (or height) đơn vị inche</b>
+- Tính toán mật độ điểm ảnh (pixel): <b>Screen density = Screen width (or height) in pixels / Screen width (or height) đơn vị inch</b>
 
 <img src="images/display_pixel_density.png"/>
 
@@ -34,16 +43,19 @@
 	<img alt="" aria-describedby="columns-gutters-margins-figure-caption-0" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="50.0%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1P_b7NIZ5_IBvs9VraJx7tu8KO-dUZXJW%2Flayout-responsive-columns-margins-gutters.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1P_b7NIZ5_IBvs9VraJx7tu8KO-dUZXJW%2Flayout-responsive-columns-margins-gutters.png">
 
 	+ Columns: Nội dung được đặt trong các khu vực của màn hình có chứa các cột. Độ rộng của các cột được xác định bằng tỷ lệ phần trăm (thay vì giá trị cố định) để nội dung thích ứng linh hoạt với mọi 			   kích thước màn hình. Số lượng columns phụ thuộc vào kích thước màn hình.
+	
 	<img alt="" aria-describedby="columns-gutters-margins-figure-caption-1" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="50.0%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1XzRkl-dQpZybJMje81knhzgS24kQkBns%2Flayout-responsive-columns-360.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1XzRkl-dQpZybJMje81knhzgS24kQkBns%2Flayout-responsive-columns-360.png">
 
 	<img alt="" aria-describedby="columns-gutters-margins-figure-caption-2" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="50.0%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1HvKFIQPbDzU3NMF_ww5lvbHilht1bmoi%2Flayout-responsive-columns-600.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1HvKFIQPbDzU3NMF_ww5lvbHilht1bmoi%2Flayout-responsive-columns-600.png">
 
 	+ Gutters: Khoảng cách giữa các cột. Có giá trị cố định theo từng kích thước màn hình.
+	
 	<img alt="" aria-describedby="columns-gutters-margins-figure-caption-3" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="50.0%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1X3yLriF6STNMsF_J-G-lPqqWxEsjSGeA%2Flayout-responsive-gutters-360.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1X3yLriF6STNMsF_J-G-lPqqWxEsjSGeA%2Flayout-responsive-gutters-360.png">
 
 	<img alt="" aria-describedby="columns-gutters-margins-figure-caption-4" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="50.0%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1SRIW3KwxGPkJk4INc3OZM_3ZBEPOjbYg%2Flayout-responsive-gutters-600.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1SRIW3KwxGPkJk4INc3OZM_3ZBEPOjbYg%2Flayout-responsive-gutters-600.png">
 
 	+ Margins: Là khoảng cách giữa nội dung và các cạnh trái và phải của màn hình. Có giá trị cố định theo từng kích thước màn hình.
+	
 	<img alt="" aria-describedby="columns-gutters-margins-figure-caption-5" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="50.0%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1KEfrUmIS_cTjLcQdgmkI6ISccOmF0jMd%2Flayout-responsive-margins-360.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1KEfrUmIS_cTjLcQdgmkI6ISccOmF0jMd%2Flayout-responsive-margins-360.png">
 
 	<img alt="" aria-describedby="columns-gutters-margins-figure-caption-6" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="50.0%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1-LhM4V-ShSU_5aGH7vWEjnLHmizNhAuA%2Flayout-responsive-margins-600.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1-LhM4V-ShSU_5aGH7vWEjnLHmizNhAuA%2Flayout-responsive-margins-600.png">
@@ -59,10 +71,8 @@
 	<video class="video-player__video animatable js-video-player js-video-load anim-appear" loop="" muted="" preload="metadata" tabindex="0">
 <source data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1fsdEL9VNAeJaQjU-bdzLZnZ2IuoPEpYT%2Flayout-responsive-breakpoints.mp4" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1fsdEL9VNAeJaQjU-bdzLZnZ2IuoPEpYT%2Flayout-responsive-breakpoints.mp4" type="video/mp4"> </video>
 
-	+ Layout sử dụng lưới 4-column, 8-column, 12-column có sẵn để sử dụng trên các màn hình.
-	<img src="images/breakpoints_system.png"/>
-
 - Grid behavior:
+
 	+ Fluid grids
 
 <img alt="" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="73.7704918033%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1BL9SdFCf9qek6sZVtiOwmbGb5YcuatRy%2Flayout-responsive-grid-behavior-fluid.gif" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1BL9SdFCf9qek6sZVtiOwmbGb5YcuatRy%2Flayout-responsive-grid-behavior-fluid.gif">
@@ -86,6 +96,7 @@
 
 ## Spacing method
 - Baseline:
+
 	+ 8dp: Tất cả các thành phần phù hợp với lưới baseline 8dp cả mobile, tablet, desktop
 	
 <img alt="" aria-describedby="baseline-figure-caption-0" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="50.0%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1pZAqRhNtwhgKNf_JMuwNgC_uQaGUeV1X%2Flayout-spacing-baslinegrid.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1pZAqRhNtwhgKNf_JMuwNgC_uQaGUeV1X%2Flayout-spacing-baslinegrid.png">
@@ -101,11 +112,7 @@
 
 	+ padding: Không gian giữa các thành phần UI, thay thế cho keyline được đo theo gia số 8dp hoặc 4dp.
 
-	<img alt="" aria-describedby="spacing-figure-caption-3" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="50.0%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1qRYD4sWHoSQs_Gg6jx5Xt_3TYp2CM-5d%2Flayout-spacing-keylinespadding-padding-verthorz.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1qRYD4sWHoSQs_Gg6jx5Xt_3TYp2CM-5d%2Flayout-spacing-keylinespadding-padding-verthorz.png">
-
 	+ vertical spacing: Đề cập đến chiều cao của một phần tử, độ cao phù hợp với grid 8dp.
-	
-<img alt="" aria-describedby="spacing-figure-caption-4" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="50.0%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1ukHGXtjoW-SxqTzYegljgtCi3JHsSFmm%2Flayout-spacing-keylinespadding-verticalspacing.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1ukHGXtjoW-SxqTzYegljgtCi3JHsSFmm%2Flayout-spacing-keylinespadding-verticalspacing.png">
 
 	+ increment: Là một phép đo được sử dụng để đo kích thước và vị trí của các thành phần. Là hình vuông có kích thước bất kỳ, nên sử dụng chiều cao của một phần tử tiêu chuẩn (app bar).
 
@@ -249,4 +256,5 @@
 - https://material.io/design/layout/applying-density.html#usage
 - https://uxplanet.org/10-principles-of-animation-in-material-design-53b870e74629
 - https://proandroiddev.com/playing-with-material-design-transitions-b3ea90c5794c
+- https://builttoadapt.io/intro-to-the-8-point-grid-system-d2573cde8632
 
