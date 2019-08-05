@@ -43,16 +43,19 @@
 	<img alt="" aria-describedby="columns-gutters-margins-figure-caption-0" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="50.0%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1P_b7NIZ5_IBvs9VraJx7tu8KO-dUZXJW%2Flayout-responsive-columns-margins-gutters.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1P_b7NIZ5_IBvs9VraJx7tu8KO-dUZXJW%2Flayout-responsive-columns-margins-gutters.png">
 
 	+ Columns: Nội dung được đặt trong các khu vực của màn hình có chứa các cột. Độ rộng của các cột được xác định bằng tỷ lệ phần trăm (thay vì giá trị cố định) để nội dung thích ứng linh hoạt với mọi 			   kích thước màn hình. Số lượng columns phụ thuộc vào kích thước màn hình.
+	
 	<img alt="" aria-describedby="columns-gutters-margins-figure-caption-1" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="50.0%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1XzRkl-dQpZybJMje81knhzgS24kQkBns%2Flayout-responsive-columns-360.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1XzRkl-dQpZybJMje81knhzgS24kQkBns%2Flayout-responsive-columns-360.png">
 
 	<img alt="" aria-describedby="columns-gutters-margins-figure-caption-2" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="50.0%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1HvKFIQPbDzU3NMF_ww5lvbHilht1bmoi%2Flayout-responsive-columns-600.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1HvKFIQPbDzU3NMF_ww5lvbHilht1bmoi%2Flayout-responsive-columns-600.png">
 
 	+ Gutters: Khoảng cách giữa các cột. Có giá trị cố định theo từng kích thước màn hình.
+	
 	<img alt="" aria-describedby="columns-gutters-margins-figure-caption-3" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="50.0%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1X3yLriF6STNMsF_J-G-lPqqWxEsjSGeA%2Flayout-responsive-gutters-360.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1X3yLriF6STNMsF_J-G-lPqqWxEsjSGeA%2Flayout-responsive-gutters-360.png">
 
 	<img alt="" aria-describedby="columns-gutters-margins-figure-caption-4" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="50.0%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1SRIW3KwxGPkJk4INc3OZM_3ZBEPOjbYg%2Flayout-responsive-gutters-600.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1SRIW3KwxGPkJk4INc3OZM_3ZBEPOjbYg%2Flayout-responsive-gutters-600.png">
 
 	+ Margins: Là khoảng cách giữa nội dung và các cạnh trái và phải của màn hình. Có giá trị cố định theo từng kích thước màn hình.
+	
 	<img alt="" aria-describedby="columns-gutters-margins-figure-caption-5" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="50.0%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1KEfrUmIS_cTjLcQdgmkI6ISccOmF0jMd%2Flayout-responsive-margins-360.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1KEfrUmIS_cTjLcQdgmkI6ISccOmF0jMd%2Flayout-responsive-margins-360.png">
 
 	<img alt="" aria-describedby="columns-gutters-margins-figure-caption-6" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="50.0%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1-LhM4V-ShSU_5aGH7vWEjnLHmizNhAuA%2Flayout-responsive-margins-600.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1-LhM4V-ShSU_5aGH7vWEjnLHmizNhAuA%2Flayout-responsive-margins-600.png">
@@ -69,9 +72,11 @@
 <source data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1fsdEL9VNAeJaQjU-bdzLZnZ2IuoPEpYT%2Flayout-responsive-breakpoints.mp4" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1fsdEL9VNAeJaQjU-bdzLZnZ2IuoPEpYT%2Flayout-responsive-breakpoints.mp4" type="video/mp4"> </video>
 
 	+ Layout sử dụng lưới 4-column, 8-column, 12-column có sẵn để sử dụng trên các màn hình.
+	
 	<img src="images/breakpoints_system.png"/>
 
 - Grid behavior:
+
 	+ Fluid grids
 
 <img alt="" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="73.7704918033%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1BL9SdFCf9qek6sZVtiOwmbGb5YcuatRy%2Flayout-responsive-grid-behavior-fluid.gif" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1BL9SdFCf9qek6sZVtiOwmbGb5YcuatRy%2Flayout-responsive-grid-behavior-fluid.gif">
@@ -95,6 +100,7 @@
 
 ## Spacing method
 - Baseline:
+
 	+ 8dp: Tất cả các thành phần phù hợp với lưới baseline 8dp cả mobile, tablet, desktop
 	
 <img alt="" aria-describedby="baseline-figure-caption-0" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="50.0%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1pZAqRhNtwhgKNf_JMuwNgC_uQaGUeV1X%2Flayout-spacing-baslinegrid.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1pZAqRhNtwhgKNf_JMuwNgC_uQaGUeV1X%2Flayout-spacing-baslinegrid.png">
