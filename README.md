@@ -112,11 +112,7 @@
 
 	+ padding: Không gian giữa các thành phần UI, thay thế cho keyline được đo theo gia số 8dp hoặc 4dp.
 
-	<img alt="" aria-describedby="spacing-figure-caption-3" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="50.0%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1qRYD4sWHoSQs_Gg6jx5Xt_3TYp2CM-5d%2Flayout-spacing-keylinespadding-padding-verthorz.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1qRYD4sWHoSQs_Gg6jx5Xt_3TYp2CM-5d%2Flayout-spacing-keylinespadding-padding-verthorz.png">
-
 	+ vertical spacing: Đề cập đến chiều cao của một phần tử, độ cao phù hợp với grid 8dp.
-	
-<img alt="" aria-describedby="spacing-figure-caption-4" class="lightbox__image zoom-target js-zoom-target js-lightbox-image inline-image animatable lazy-wrapper__image js-lazy-image anim-appear" data-aspect-ratio="50.0%" data-src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1ukHGXtjoW-SxqTzYegljgtCi3JHsSFmm%2Flayout-spacing-keylinespadding-verticalspacing.png" src="https://storage.googleapis.com/spec-host/mio-staging%2Fmio-design%2F1563837804615%2Fassets%2F1ukHGXtjoW-SxqTzYegljgtCi3JHsSFmm%2Flayout-spacing-keylinespadding-verticalspacing.png">
 
 	+ increment: Là một phép đo được sử dụng để đo kích thước và vị trí của các thành phần. Là hình vuông có kích thước bất kỳ, nên sử dụng chiều cao của một phần tử tiêu chuẩn (app bar).
 
