@@ -1,4 +1,4 @@
-package com.example.materialdesignsample.ui.main
+package com.example.materialdesignsample.ui.activity
 
 import android.os.Bundle
 import com.example.materialdesignsample.R

@@ -47,7 +47,7 @@ class MainFragment : Fragment() {
             )
 
             val extras = ActivityNavigatorExtras(options)
-//            findNavController().navigate(MainFragmentDirections.actionMainFragmentToDetailFragment(mail.id), extras)
+            findNavController().navigate(MainFragmentDirections.actionMainFragmentToDetailFragment(), extras)
         }
     }
 }
