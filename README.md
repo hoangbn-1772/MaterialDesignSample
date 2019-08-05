@@ -23,7 +23,7 @@
 	+ For users
 
 ## Pixel density
-- Tính toán mật độ điểm ảnh (pixel): <b>Screen density = Screen width (or height) in pixels / Screen width (or height) đơn vị inche</b>
+- Tính toán mật độ điểm ảnh (pixel): <b>Screen density = Screen width (or height) in pixels / Screen width (or height) đơn vị inch</b>
 
 <img src="images/display_pixel_density.png"/>
 
