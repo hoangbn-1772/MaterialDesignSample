@@ -219,7 +219,7 @@ class MainActivity : AppCompatActivity(), AppBarLayout.OnOffsetChangedListener,
     }
 
     private fun moveScreen() {
-        Intent(this, TransitionScreenActivity::class.java).apply {
+        Intent(this, SecondActivity::class.java).apply {
             startActivity(this)
         }
     }

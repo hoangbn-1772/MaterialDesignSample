@@ -1,3 +1,7 @@
 package com.example.materialdesignsample.data.model
 
-data class Picture(val url: String)
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
+@Parcelize
+data class Picture(val url: String) : Parcelable

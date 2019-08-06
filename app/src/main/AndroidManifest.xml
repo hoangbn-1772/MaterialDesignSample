@@ -13,7 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppThemeLight"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
-        <activity android:name=".ui.activity.TransitionScreenActivity"/>
+        <activity android:name=".ui.activity.DetailActivity">
+        </activity>
+        <activity android:name=".ui.activity.SecondActivity"/>
         <activity android:name=".ui.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

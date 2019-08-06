@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:duration="@integer/animation_duration">
+
+    <!-- Start scaling & fading RV to give the impression of zoom out -->
+    <transitionSet>
+        <targets>
+            <target android:targetId="@id/fragment_main_rv"/>
+        </targets>
+        <transition
+            class="com.example.materialdesignsample.animation.PopTransition"
+            app:endScale="0.95"
+            app:startScale="1.0"/>
+        <transition
+            class="com.example.materialdesignsample.animation.FadeTransition"
+            app:endAlpha="0.3"
+            app:startAlpha="1.0"/>
+    </transitionSet>
+
+</transitionSet>
